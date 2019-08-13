@@ -1,0 +1,19 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Banco
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding center>
+  <ion-list>
+    <ion-item>
+      <ion-input placeholder="Nombre de usuario" [(ngModel)]="username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-input placeholder="Contraseña" [(ngModel)]="password"></ion-input>
+    </ion-item>
+  </ion-list>
+  <button ion-button full (click)="login()">Iniciar sesión </button>
+<ion-content>
