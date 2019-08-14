@@ -1,9 +1,49 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>mainMenu</ion-title>
+    <ion-title>Bienvenido {{usuario}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <h1>Mis últimos movimientos </h1>
+  <ion-row style="border-bottom: groove;">
+      <ion-col col-4>
+      <ion-label >Concepto</ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-label>Monto</ion-label>
+    </ion-col>
+      <ion-col col-4>
+      <ion-label >Fecha</ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-row style="border-bottom: groove;">
+      <ion-col col-4>
+      <ion-label > username </ion-label>
+    </ion-col>
+    <ion-col col-4>
+      <ion-label >quantity </ion-label>
+    </ion-col>
+      <ion-col col-4>
+      <ion-label > date </ion-label>
+    </ion-col>
+  </ion-row>
+  <ion-tabs>
+  <ion-tab-bar slot="bottom">
+    <ion-tab-button tab="schedule">
+      <ion-icon name="calendar"></ion-icon>
+      <ion-label>Movimientos</ion-label>
+    </ion-tab-button>
 
+    <ion-tab-button tab="transfer">
+      <ion-icon name="logo-usd"></ion-icon>
+      <ion-label>Transferir</ion-label>
+    </ion-tab-button>
+
+    <ion-tab-button tab="settings">
+      <ion-icon name="settings"></ion-icon>
+      <ion-label>Configuración</ion-label>
+    </ion-tab-button>
+  </ion-tab-bar>
+</ion-tabs>
 </ion-content>
